@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+.main{
+    
+    margin: auto;
+    padding-bottom: 50px;
+}

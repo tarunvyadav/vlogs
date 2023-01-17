@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.DownWatchHide{
+  display:none
+}
+
+.DownWatch{
+    display:block;
+    z-index: 2;
+    height: fit-content;
+    width: fit-content;
+    position:absolute;
+    top:70px;
+    color: white;
+    right:2.2rem;
+    font-size: small;
+}
+
+.downList{
+   padding:10px 60px;
+   border-bottom: white solid 1px;
+   color: white;
+    
+}
+
+.downList:hover{
+    background-color: gainsboro;
+    color:black;
+    cursor: pointer;
+}

@@ -1,0 +1,53 @@
+import React, {createContext, useContext,useReducer} from "react";
+import {WatchReducer} from './reducer';
+
+
+const VlogCon = createContext();
+
+function Context({children}){
+const [state,dispatch]= useReducer(WatchReducer,{
+   
+    WatchList: [],
+    liked: [],
+    watchlater: []
+})
+
+ return (
+    <VlogCon.Provider value={{state,dispatch}}>{children}</VlogCon.Provider>
+  )
+};
+
+export const ContState = () => {
+  return useContext(VlogCon);
+};
+
+export default Context
+
+
+
+import { ActionTypes } from "@mui/base";
+
+export const WatchReducer=(state,action)=>{
+    switch (action.type) {
+        case "ADD_WATCHLIST":
+             return {
+            ...state,
+            WatchList:[...state.WatchList, {...action.payload}]
+          }
+         
+         case "ADD_LIKED":
+             return {
+            ...state,
+            liked:[...state.liked, {...action.payload}]
+          }
+
+        case "ADD_WATCHLATER":
+             return {
+            ...state,
+            watchlater:[...state.watchlater, {...action.payload}]
+          }
+    
+        default:
+            break;
+    }
+}

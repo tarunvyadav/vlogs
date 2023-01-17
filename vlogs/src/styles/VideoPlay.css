@@ -1,0 +1,33 @@
+
+
+
+
+.player{
+    position:relative;
+    width: 60%;
+    height: 60%;
+    top:20px;
+    left:5vw
+
+}
+
+.sidebar{
+    position: relative;
+    bottom: 350px;
+    left:80vw;
+    height: fit-content;
+    width: fit-content
+}
+
+.sideDownList{
+    width: 100%;
+    padding: 20px 60px;
+    border-bottom: white solid 1px;
+    color: white;
+}
+
+.sideDownList:hover {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}

@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.sideBox{
+    /* display: none; */
+        height: fit-content;
+        width: fit-content;
+        position: absolute;
+        top:30px;
+        right:-70px;
+        color: white;
+        /* height:60px;
+        width: 70px; */
+        font-size: small;
+        z-index: 2;
+}
+
+.false{
+    display: none;
+}
+
+.sideBoxChild {
+    padding: 5px 20px;
+    border-bottom: white solid 1px;
+    text-transform: uppercase;
+}
+
+.sideBoxChild:hover {
+    background-color: gainsboro;
+    color: black;
+    cursor: pointer;
+}

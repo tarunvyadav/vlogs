@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+.Box{
+    position:relative;
+    display:flex;
+    /* overflow:hidden; */
+    flex-direction: column;
+    border-radius: 15px;
+    width: 320px;
+    height:300px;
+    background-color: rgb(66, 61, 61);
+    
+}
+
+.otherHalf{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0 0 15px 15px;
+}
+
+.Box>a>img{
+ border-radius: 15px 15px 0 0;
+  
+}
+
+a{
+   
+    height: 180px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background-color: transparent;
+    
+}
+
+.Box>.otherHalf>.top>p{
+    color:white;
+    font-weight: 100;
+    font-size: 12px;
+    writing-mode: horizontal-tb;
+    transform: none;
+    width: 90%;
+    padding: 10px ;
+    background-color:transparent;
+    /* border-radius: 0px 0px 15px 15px; */
+    overflow: hidden;
+    height: 80px;
+}
+
+
+.Box>.otherHalf>p {
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
+    writing-mode: horizontal-tb;
+    transform: none;
+    width: 100%;
+    background-color:transparent;
+    border-radius: 0px 0px 15px 15px;
+    overflow-x:hidden;
+    padding: 10px;
+    margin-top: auto;
+}
+
+
+
+
+
+
+.MoreVertIcon{
+background-color: transparent;
+    position: absolute;
+    right: 5px;
+    display: block; 
+    margin: 10px 0 0 0;
+    height: 100px;
+    
+}
+
+
+.title{
+    margin: 0px;
+    overflow: none;
+   
+}
