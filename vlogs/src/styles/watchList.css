@@ -1,7 +1,7 @@
-* {
+  * {
     box-sizing: border-box;
     background-color: black;
-}
+  }
 
 
 
@@ -9,74 +9,74 @@
     position:relative;
     width: 90%;
     height: 70px;
- /* background-color: antiquewhite; */
     margin-left: 5vw;
-    /* top:10%; */
-    font:200;
-    color:white;
-    display:flex;
+    font: 200;
+    color: white;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid white;
-
+    
   }
+
+    
     
 
-   .pageOption{
+  .pageOption{
     display:inline;
     border-radius: 10px;
     top:30%;
     position:absolute;
-    /* left: 20vw; */
-    /* height: 80%; */
     width: 200px;
-    /* background-color: blue; */
+  }
+   
     
 
-   }
+ 
 
-   .ArrowDropDownIcon {
-       position: absolute;
-       right: 5px;
-       top: 20px;
-       background-color: transparent;
-       font-size: large;
+  .ArrowDropDownIcon {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    background-color: transparent;
+    font-size: large;
+  }
 
-   }
 
-   .videoList{
+  .videoList{
     margin-left: 6vw;
     margin-top: 25px;
     display: flex;
-        gap: 20px;
-        flex-direction: column;
-   }
+    gap: 20px;
+    flex-direction: column;
+  }
 
-   .bar{ 
+
+  .bar{ 
     display: flex;
     gap:20px;
-
+  }
    
-   }
+   
 
-   .bar>img{
+  .bar>img{
     height: 120px;
     width:180px;
     border-radius: 5px;
-   }
+  }
 
-   .bar>.text{
+  .bar>.text{
     margin-top: 1vw;
     display: flex;
     flex-direction: column;
     width: 650px;
     overflow: hidden;
 
-   }
+  }
    
    
 
-   .bar>.text>.title{
+  .bar>.text>.title{
     color: white;
     font-weight: 100;
     font-size: small;
@@ -85,25 +85,25 @@
     width: 100%;
     overflow: hidden;
     
-   }
+  }
 
-   .channel{
-     display: flex;
-     justify-content: space-between;
-     align-content: center;
-     margin: none;
-     width: 250px;
-   }
+  .channel{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: none;
+    width: 250px;
+  }
 
-   .channel>p{
-    /* font-weight:20; */
+  .channel>p{
+  
     font-size: small;
-   }
+  }
 
    
 
-   .DeleteIcon
+  .DeleteIcon
    {
       margin-top: 5%;
 
-   }
+  }

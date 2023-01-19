@@ -7,6 +7,7 @@ import {changeUser} from '../redux/action/action'
 import {Link} from "react-router-dom"
 
 
+
 const VideoPlay = () => {
     
    
@@ -53,17 +54,15 @@ const VideoPlay = () => {
                       WATCHLATER
                   </div>
                  </Link> 
-            </div>:<div className="sidebar"><div className='sideDownList' onClick={messageFunc}>
-                      WATCHLIST
-                    </div>
+            </div>:<div className="sidebar"><div className='sideDownList' onClick={messageFunc}>WATCHLIST</div>
                  
                  <div className='sideDownList' onClick={messageFunc}>
                       LIKED
-                  </div> 
+                 </div> 
                 
                  <div className='sideDownList' onClick={messageFunc}>
                       WATCHLATER
-                  </div> </div>
+                 </div> </div>
             }
            
         </>

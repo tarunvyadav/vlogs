@@ -2,7 +2,6 @@ import React, {useState, useEffect, useRef}from 'react'
 import '../styles/account.css'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import DownWatch from './DownWatch';
-import { useSelector,useDispatch } from 'react-redux';
 import Emails from '../data/Email';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
@@ -10,8 +9,8 @@ function Account() {
 
   const[showDown,setShowDown] = useState(false)
 
-    let DownRef = useRef();
-   const Email= Emails
+  let DownRef = useRef();
+  const Email= Emails
   useEffect(()=>{
     let handler = (e)=>{
       if(!DownRef.current.contains(e.target)){
@@ -25,18 +24,18 @@ function Account() {
 
 
 
-const ShowAccountFunc = ()=>{
-   setShowDown(!showDown)
-   console.log(showDown)
-}
+  const ShowAccountFunc = ()=>{
+    setShowDown(!showDown)
+    console.log(showDown)
+  }
 
 
-  return (
+return (
    
     <div className='account' onClick={ShowAccountFunc} ref={DownRef}>
-    <AccountCircleIcon className='AccountCircleIcon' />
-    <ArrowDropDownIcon className='ArrowDropDownIcon'/>
-      <DownWatch show={showDown}/>
+       <AccountCircleIcon className='AccountCircleIcon' />
+       <ArrowDropDownIcon className='ArrowDropDownIcon'/>
+       <DownWatch show={showDown}/>
     </div>
   
   )

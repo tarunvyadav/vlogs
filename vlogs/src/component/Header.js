@@ -2,17 +2,16 @@ import React, {useEffect, useRef} from 'react'
 import VpnKeyOutlinedIcon from '@mui/icons-material/VpnKeyOutlined';
 import '../styles/header.css'
 import Account from './Account';
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useSelector,useDispatch } from 'react-redux';
 import {formAppears,formDisappears} from '../redux/action/action'
 import LoginForm from  './LoginForm.js'
 import {Link} from "react-router-dom"
 
+
 function Header() {
    const dispatch = useDispatch();
-    const videos = useSelector((state)=>state);
-
-     let formRef = useRef();
+   const videos = useSelector((state)=>state);
+   let formRef = useRef();
 
   useEffect(()=>{
     let handler = (e)=>{
@@ -26,12 +25,12 @@ function Header() {
 
    const userActive= videos.allvideos.user;
 
-  //  console.log(formShow)
+ 
 
-  const showForm= ()=>{
+   const showForm= ()=>{
          dispatch(formAppears())
          
-  }
+   }
   return (
     <div className='header'>
         <Link to='/'><span className='vlog'>VLOGS.COM</span></Link>

@@ -4,53 +4,48 @@
 
 .logindiv1 {
     display: none;
-    /* display: none; */
-        position: fixed;
-        /* top: 50px; */
-        top: 50px;
-        right: 2.2rem;
-        height: fit-content;
-        width: fit-content;
-        background-color: white;
-        margin: auto;
-        border-radius: 10px;
-        align-items: center;
-        padding: 20px;
-        ;
-        background-color: black;
-        border: #F9F6EE solid 0.5px;
-        text-align: center;
+    position: fixed;
+    top: 50px;
+    right: 2.2rem;
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    border: #F9F6EE solid 0.5px;
+    text-align: center;
 }
 
 .logindiv{
     display: block;
     position:fixed;
-    /* top: 50px; */
     top: 50px;
-    right:2.2rem;
-    height:fit-content;
-    width:fit-content;
+    right: 2.2rem;
+    height: fit-content;
+    width: fit-content;
     background-color: white;
     margin: auto;
     border-radius: 10px;
     align-items: center;
-    padding: 20px;;
+    padding: 20px;
     background-color: black;
     border: #F9F6EE solid 0.5px;
     text-align: center;
     z-index: 2;
+        
+    
 }
 
 
 
 form{
     background-color: black;
-    
-   
-   flex-direction: column;
-   justify-content: end;
-   align-items: flex-end;
-
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
 }
 
 .text{
@@ -61,10 +56,10 @@ form{
 input{
     margin:15px;
     border-color: white;
-   display: block;
-   height: 30px;
-   width:200px;
-   border-radius: 30px;
+    display: block;
+    height: 30px;
+    width:200px;
+    border-radius: 30px;
     background-color: white;
 }
 

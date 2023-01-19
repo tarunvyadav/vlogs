@@ -1,4 +1,7 @@
-
+* {
+     box-sizing: border-box;
+     background-color: black;
+}
 
 
 
@@ -30,4 +33,29 @@
     background-color: gainsboro;
     color: black;
     cursor: pointer;
+}
+
+
+@media (max-width: 750px) {
+
+.sidebar {
+        visibility: hidden;
+        position: relative;
+        bottom: 350px;
+        left: 80vw;
+        height: fit-content;
+        width: fit-content
+    }
+
+       
+
+ .player {
+     position: relative;
+     width: 80%;
+     height: 60%;
+     top: 20px;
+     left: 5vw
+ }
+
+
 }

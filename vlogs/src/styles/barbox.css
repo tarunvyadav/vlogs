@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+
 }
 
 
@@ -11,7 +12,7 @@
     margin: 75px;
     margin-right: 0px;
     position: relative;
-    /* background-color: #3B3C36; */
+    
 }
 
 .titleBox1 {
@@ -29,18 +30,16 @@
 
 .titleBox1::-webkit-scrollbar {
     display: none;
-
 }
 
 .title{
-transform: rotate(270deg);
-color: white;
-/* background-color: blanchedalmond; */
-width: 50px;
-height: 50px;
-text-transform: uppercase;
-font-size: large;
-font-weight: 700;
+    transform: rotate(270deg);
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: 700;
 
 }
 
@@ -49,4 +48,16 @@ font-weight: 700;
     justify-content: center;
     align-items: center;
   
+}
+
+@media (max-width: 500px) {
+    .Boxbar {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            margin: 75px;
+            margin-right: 0px;
+            position: relative;
+            margin: 75px 0 75px 5px;
+        }
 }

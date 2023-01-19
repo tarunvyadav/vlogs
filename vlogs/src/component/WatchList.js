@@ -27,9 +27,9 @@ function WatchList() {
         
         const{url, title,channelTitle} = video;
         
-        const deleteVideo=()=>{
-           dispatch(removeWatchList(video))
-        }
+          const deleteVideo=()=>{
+             dispatch(removeWatchList(video))
+          }
 
         return(<> 
         <div className='bar'>
@@ -37,11 +37,14 @@ function WatchList() {
           <div className='text'>
             <p className='title'>{title}</p>
             <div className='channel'>
-            <p>{channelTitle}</p>
-             <DeleteIcon className='DeleteIcon' onClick={deleteVideo}/>
-             </div>
+              <p>{channelTitle}</p>
+                <DeleteIcon className='DeleteIcon' onClick={deleteVideo}/>
+            </div>
           </div>
-        </div></>)})}
+        </div>
+        </>
+        ) 
+        })}
       </div>
      
     </>

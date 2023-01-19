@@ -6,23 +6,15 @@ import Emails from '../data/Email';
 
 function LoginForm() {
 
-    const videos = useSelector((state)=>state);
-    const dispatch = useDispatch();
-
-
+  const videos = useSelector((state)=>state);
+  const dispatch = useDispatch();
   const setUser= videos.allvideos.user
-   const formShow= videos.allvideos.show
-
+  const formShow= videos.allvideos.show
   const[input,setInput] = useState({
     email:'',
     password: ''
   })
-
-
- 
-
- console.log( setUser)
-
+  
   const loginFun = (e)=>{
        e.preventDefault()
           const value=e.target.value;
@@ -42,44 +34,50 @@ function LoginForm() {
 
          
          
-    }
+  }
   
 
 
- const check= ()=>{
+  const check= ()=>{
   
     if( Emails.find((Email)=>{return(Email.email==input.email&&Email.password==input.password)})){
       dispatch(changeUser())
       dispatch(formDisappears())
     }else{
-      return alert('oops')
+      return alert('Inputs Are Incorrect!!!')
     }
 
-  }
- 
+  } 
 
-//  const userChange= ()=>{
-//     )
-//  }
 
- const onSubmit= (e)=>{
-  e.preventDefault()
+  const onSubmit= (e)=>{
+     e.preventDefault()
      check()
      setInput({
-    email:'',
-    password: ''
-  })
- }
-
-  return (
+       email:'',
+       password: ''
+   })
+  }
+ 
+  
+ return (
     <div className={`logindiv1 ${formShow &&`logindiv`}`} onSubmit={onSubmit} >
-    <div className='text'>Login With Email</div>
-    <form><input type='email' name="email"  placeholder='type your email here....'  onChange={loginFun} value={input.email}/>
-        <input type='password' name="password"  placeholder='type your passward here....' onChange={loginFun} value={input.password}/>
-        <button type='submit'>Login</button></form>
+      <div className='text'>Login With Email</div>
+      <form><input type='email' name="email"  placeholder='type your email here....'  onChange={loginFun} value={input.email}/>
+      <input type='password' name="password"  placeholder='type your passward here....' onChange={loginFun} value={input.password}/>
+      <button type='submit'>Login</button></form>
         
     </div>
   )
 }
 
 export default LoginForm
+
+
+ 
+
+
+
+  
+
+ 

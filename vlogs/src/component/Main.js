@@ -7,7 +7,7 @@ import '../styles/main.css'
 
 function Main() {
   return (
-    <div className='main'>
+  <div className='main'>
     
     <div className="food">
     
@@ -42,7 +42,7 @@ function Main() {
       <BoxbarFood title="beauty" arr={beautyData}/>
     </div>
     
-    </div>
+  </div>
     
   )
 }

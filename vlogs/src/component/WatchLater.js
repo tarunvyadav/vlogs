@@ -8,11 +8,11 @@ import {removeWatchlater} from '../redux/action/action'
 function WatchLater() {
 
     const videos = useSelector((state)=>state);
-   const dispatch = useDispatch();
-
-   const videoList= videos.allvideos.watchlater
-
+    const dispatch = useDispatch();
+    const videoList= videos.allvideos.watchlater
     
+
+ 
   
 
   return (
@@ -31,11 +31,14 @@ function WatchLater() {
             dispatch(removeWatchlater(video))
         }
 
-        return(<> <div className='bar' key={videoId}>
-        <img src={url}/>
-        <div className='text'><p className='title'>{title}</p>
-        <div className='channel'><p>{channelTitle}</p> <DeleteIcon className='DeleteIcon' onClick={DeleteVideo}/></div></div>
-      </div></>)})}
+        return(
+          <> 
+            <div className='bar' key={videoId}>
+               <img src={url}/>
+               <div className='text'><p className='title'>{title}</p>
+               <div className='channel'><p>{channelTitle}</p> <DeleteIcon className='DeleteIcon' onClick={DeleteVideo}/></div></div>
+            </div>
+          </>)})}
       </div>
      
     </>

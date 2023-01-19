@@ -6,53 +6,42 @@ import {addWatchList,addLiked,addWatchlater} from '../redux/action/action'
 
 function SideBox({item,show, setShow}) {
     const videos = useSelector((state)=>state);
-   const dispatch = useDispatch();
-     const videoList= videos.allvideos.WatchList
-
-
-         let SideBoxRef = useRef();
-
-
-
+    const dispatch = useDispatch();
     const userActive= videos.allvideos.user;
+    const load=item;
 
-  useEffect(()=>{
-    let handler = (e)=>{
-      if(!SideBoxRef.current.contains(e.target)){
-         setShow(false)
-           console.log(show)
-      }
-    };
-    document.addEventListener('mousedown', handler);
-    return() =>{document.removeEventListener('mousedown', handler)}
-  },[])
+
+    
+
+
      
     
 
-    const load=item;
 
-     const watchFun = async()=>{
 
-      if(userActive){ return alert('Please Login')}
+    const watchFun = async()=>{
+          if(userActive){ return alert('Please Login')}
             dispatch(addWatchList(load))
            
-     }
+    } 
 
-       const likedFun = async()=>{
+
+    const likedFun = async()=>{
           if(userActive){ return alert('Please Login')}
           dispatch(addLiked(load))
-     }
+    }
 
-       const laterFun = async()=>{
+
+    const laterFun = async()=>{
            if(userActive){ return alert('Please Login')}
           dispatch(addWatchlater(load))
         
-     }
+    }
   
 
 
-    return (
-    <div className={`sideBoxhide ${show &&`sideBox`}` } ref={SideBoxRef}>
+  return (
+    <div className={`sideBoxhide ${show &&`sideBox`}` } >
         <div className='sideBoxChild' onClick={watchFun} >
             WATCHLIST
         </div>

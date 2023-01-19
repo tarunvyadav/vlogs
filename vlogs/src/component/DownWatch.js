@@ -7,9 +7,9 @@ import '../styles/loginForm.css'
 
 function DownWatch({show}) {
    const dispatch = useDispatch();
-    const videos = useSelector((state)=>state);
-
-    const userActive= videos.allvideos.user;
+   const videos = useSelector((state)=>state);
+   const userActive= videos.allvideos.user;
+   
 
     const logOutFunc= ()=>{
       dispatch(changeUser())
@@ -31,9 +31,9 @@ function DownWatch({show}) {
         <Link to='/WatchLater'><div className='downList'>
             WATCHLATER
         </div></Link> 
-         <div className='downList' onClick={logOutFunc}>
+        <Link to='/'> <div className='downList' onClick={logOutFunc}>
             LOGOUT
-        </div>
+        </div></Link> 
     </div>
   )
 }

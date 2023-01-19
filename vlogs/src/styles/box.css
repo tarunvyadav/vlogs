@@ -4,7 +4,6 @@
 .Box{
     position:relative;
     display:flex;
-    /* overflow:hidden; */
     flex-direction: column;
     border-radius: 15px;
     width: 320px;
@@ -23,7 +22,7 @@
 }
 
 .Box>a>img{
- border-radius: 15px 15px 0 0;
+    border-radius: 15px 15px 0 0;
   
 }
 
@@ -75,13 +74,13 @@ a{
 
 
 .MoreVertIcon{
-background-color: transparent;
+    background-color: transparent;
     position: absolute;
     right: 5px;
     display: block; 
     margin: 10px 0 0 0;
     height: 100px;
-    
+    color: white;
 }
 
 

@@ -1,18 +1,12 @@
 import React, {useEffect,useState}from 'react'
 import Box from './Box.js'
 import '../styles/barbox.css'
-import axios from 'axios';
+
 
 
 function BoxbarFood({title,arr}) {
 
-
-
-
- 
-
-
-  return (<>
+return (<>
     
     <div className='Boxbar'>
     <div className='titleBox'><div className='title'>{title}</div></div>
@@ -23,3 +17,9 @@ function BoxbarFood({title,arr}) {
 }
 
 export default BoxbarFood
+
+
+ 
+
+
+  

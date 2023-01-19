@@ -1,33 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header.js'
 import Main from  './component/Main.js'
-import LoginForm from  './component/LoginForm.js'
-import DownWatch from  './component/DownWatch.js'
 import WatchList from './component/WatchList';
 import WatchLater from './component/WatchLater';
 import Liked from './component/Liked';
 import {BrowserRouter,Routes, Route} from "react-router-dom"
 import VideoPlay from './component/VideoPlay';
 
+
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-      <Header/>
-      {/* <Main/> */}
-      <Routes>
-        <Route path='/' element={<Main/>} />
+      <BrowserRouter>
+        <Header/>
+         {/* <Main/> */}
+          <Routes>
+           <Route path='/' element={<Main/>} />
          
+             <Route  path='/WatchList' element={<WatchList/>}/> 
         
-        <Route  path='/WatchList' element={<WatchList/>}/> 
-        
-        <Route path='/WatchLater' element={<WatchLater/>}/>
+            <Route path='/WatchLater' element={<WatchLater/>}/>
        
-        <Route path='/Liked' element={<Liked/>}/>
+            <Route path='/Liked' element={<Liked/>}/>
          
-         <Route path='/:id' element={<VideoPlay/>}/>
-      </Routes>
+            <Route path='/:id' element={<VideoPlay/>}/>
+            
+          </Routes>
       
       </BrowserRouter>
     </div>
