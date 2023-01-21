@@ -89,3 +89,26 @@ a{
     overflow: none;
    
 }
+
+
+@media (max-width: 750px) {
+
+.Box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        width: 300px;
+        height: 280px;
+        background-color: rgb(66, 61, 61);
+
+    }
+
+    .Box>a>img {
+        border-radius: 15px 15px 0 0;
+        height: 180px;
+        width: 280px;
+    }
+
+
+}
